@@ -3,7 +3,9 @@ import "./App.css";
 // import Welcome from "./components/welcome";
 // import Thanks from "./components/thanks";
 // import Fruits from "./components/fruits";
-import Onchange from "./components/onChange";
+// import Onchange from "./components/onChange";
+// import OnChangeSingleLine from "./components/onChangeSingleLine";
+import FormValidation from "./components/formValidation";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
         {/* <Welcome name="Shakil" weight="120"></Welcome> */}
         {/* <Fruits /> */}
         {/* <Thanks /> */}
-        <Onchange />
+        {/* <Onchange /> */}
+        {/* <OnChangeSingleLine /> */}
+        <FormValidation />
       </header>
     </div>
   );
