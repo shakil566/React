@@ -1,4 +1,6 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 class FormValidation extends React.Component {
   state = {
@@ -13,11 +15,11 @@ class FormValidation extends React.Component {
   };
 
   Validation(){
-    if(this.state.name == ''){
+    if(this.state.name === ''){
         this.setState({nameErr:"Name field is required !"})
-    }else if(this.state.email == ''){
+    }else if(this.state.email === ''){
         this.setState({emailErr:"Email field is required !"})
-    }else if(this.state.password == ''){
+    }else if(this.state.password === ''){
         this.setState({passwordErr:"Password field is required !"})
     }else{
         return true;
@@ -34,6 +36,10 @@ class FormValidation extends React.Component {
   render() {
     return (
       <div>
+        <Breadcrumb>
+      <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+      <Breadcrumb.Item active>Students Data</Breadcrumb.Item>
+    </Breadcrumb>
         <form onSubmit={this.formSubmit}>
           <div class="form-group">
             <h1>Student Form</h1>
@@ -93,7 +99,7 @@ class FormValidation extends React.Component {
             ></input>
             <strong style={{color:'red'}}>{this.state.passwordErr}</strong>
               <br></br>
-            <button class="btn btn-info" type="submit" >Submit</button>
+            <Button variant="success" type="submit" >Submit</Button>
 
           </div>
         </form>

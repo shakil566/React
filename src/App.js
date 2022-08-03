@@ -1,5 +1,7 @@
 
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import Welcome from "./components/welcome";
 // import Thanks from "./components/thanks";
 // import Fruits from "./components/fruits";
